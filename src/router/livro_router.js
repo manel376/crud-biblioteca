@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const livro_routers = require("../controllers/livro_routers.js")
+const livro_routers = require("../controllers/livro_controller.js")
 
 router.get("/", (req, res) => {
     res.json(livro_routers.index())

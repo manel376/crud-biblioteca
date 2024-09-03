@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const estudante_routers = require("../controllers/estudante_routers.js")
+const estudante_routers = require("../controllers/estudante_controller.js")
 
 router.get("/", (req, res) => {
     res.json(estudante_routers.index())

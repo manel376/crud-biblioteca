@@ -1,10 +1,10 @@
 const express = require("express")
-const aluguel_routers = require("./routes/aluguel.js")
-const estudante_routers = require("./routes/estudante_routers.js")
-const livro_routers = require("./routes/livro_routers.js")
+const aluguel_routers = require("./src/router/aluguel_router.js")
+const estudante_routers = require("./src/router/estudante_router.js")
+const livro_routers = require("./src/router/livro_router.js")
 const app = express()
 const port = 5000
-
+        
 app.use(express.json())
 // app.use(cep_endereco) // Middleware de uso global
 

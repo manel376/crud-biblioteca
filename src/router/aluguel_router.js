@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const aluguel_routers = require("../controllers/aluguel_routers.js")
+const aluguel_routers = require("../controllers/aluguel_controller.js")
 
 router.get("/", (req, res) => {
     res.json(aluguel_routers.index())
